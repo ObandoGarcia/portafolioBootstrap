@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*Generales*/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Cabecera*/
+.foto-cara{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.cabecera {
+    padding-top: 150px;
+}
+
+.btn-redes{
+    width: 80px;
+}
+
+.cuadro-cabecera {
+    margin: 80px;
+}
+
+/*Sección de sobre mi*/
+.sobre-mi{
+    padding-top: 50px;
+}
+
+/*Sección de proyectos*/
+.img-proyecto{
+    border-radius: 50px;
+}
+
+

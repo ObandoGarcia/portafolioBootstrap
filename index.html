@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de Pico CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!--Estilos generales-->
+    <link rel="stylesheet" href="/css/estilos.css"> 
+    <title>Portfolio - Jose Obando</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+          <div class="grid cabecera">
+            <div class="cuadro-cabecera">
+              <img class="foto-cara" src="/img/FotoCara.jpg" alt="Foto de Jose Obando">
+            </div>
+            <div class="informacion-header">
+              <hgroup>
+                <h1>Jose Manuel Obando Garcia</h1>
+                <h3>Desarrollador Full Stack Jr.</h3>
+              </hgroup>
+              <a href="#" data-tooltip="LinkedIn" data-placement="bottom" role="button" class="contrast outline btn-redes"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="/docs/CurrículumJoseManuelObando.pdf" download="" data-tooltip="Descargar mi CV" data-placement="bottom" role="button" class="contrast outline btn-redes"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </header>
+        <section class="sobre-mi">
+          <h2>Sobre mi <i class="fa-solid fa-address-card"></i></h2>
+          <p>Poseo muy buenas aptitudes para el desarrollo y aprendizaje
+            continuo sobre tecnologías que me impulsen a alcanzar objetivos
+            concretos dentro de una organización , conocimiento de lenguajes
+            SQL, JavaScript y Python. Con el objetivo de convertirme en
+            desarrollador Full Stack Senior.</p>
+        </section>
+        <section class="seccion-experiencia">
+          <h2>Experiencia laboral <i class="fa-solid fa-briefcase"></i></h2>
+          <div>
+            <hgroup>
+              <h3>Auxiliar de Bodega - Electronica Japonesa</h3>
+              <h4>Noviembre 2020 - Febrero 2024</h4>
+            </hgroup>
+            <ul>
+              <li>Recepción y despacho de mercaderías.</li>
+              <li>Clasificación de productos.</li>
+              <li>Soporte de información sobre productos.</li>
+            </ul> 
+          </div>
+          <br>
+          <br>
+          <div>
+            <hgroup>
+              <h3>Pasante Auxiliar de Nominas y RH - Livsmart</h3>
+              <h4>Noviembre 2019 - Enero 2020</h4>
+            </hgroup>
+            <ul>
+              <li>Actividades generales de Recursos Humanos.</li>
+              <li>Atención al cliente.</li>
+              <li>Presentación de informes.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="seccion-proyectos">
+          <h2>Proyectos <i class="fa-solid fa-bars-progress"></i></h2>
+          <div class="grid">
+            <div class="contenedor-img">
+              <img class="img-proyecto" src="/img/proyectoReact.png" alt="Proyecto con React">
+            </div>
+            <div>
+              <hgroup>
+                <h3>CRUD React JS</h3>
+                <h4>Proyecto de operaciones CRUD con React trabando con API, Axios y Semantic UI</h4>
+              </hgroup>
+              <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="bi bi-kanban-fill"></i>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="grid">
+            <div class="contenedor-img">
+              <img class="img-proyecto" src="/img/proyectoCantor.png" alt="Proyecto con Bootstrap">
+            </div>
+            <div>
+              <hgroup>
+                <h3>Pagina de presentación para escuela</h3>
+                <h4>Pagina básica con  html, css y bootstrap</h4>
+              </hgroup>
+              <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section class="tecnologias" id="tec">
+          <h2>Tecnologías y lenguajes de programación <i class="fa-solid fa-code"></i></h2>
+            <a href="#tec" role="button" class="contrast outline"><i class="fa-brands fa-html5"></i> HTML 5</a>
+            <a href="#tec" role="button" class="contrast outline"><i class="fa-brands fa-js"></i> JavaScript</a>
+            <a href="#tec" role="button" class="contrast outline"><i class="fa-brands fa-react"></i> React</a>
+            <a href="#tec" role="button" class="contrast outline"><i class="fa-brands fa-python"></i> Python</a>
+            <a href="#tec" role="button" class="contrast outline"><i class="fa-solid fa-database"></i> MySQL</a>
+        </section>
+        <section class="contacto">
+          <h2>Contacto <i class="fa-solid fa-address-book"></i></h2>
+            <form id="contacto" action="https://formsubmit.co/17b5f38213f5e2fae3dfa646474072 31" method="POST">
+              <label for="email">Dirección de correo</label>
+              <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+              <label for="email">Mensaje</label>
+              <input type="text" id="mensaje" name="msg" placeholder="Mensaje" required>
+            <input type="submit" class="contrast outline">
+            </form>
+        </section>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        let formulario = document.getElementById('contacto');
+        formulario.addEventListener('submit', function(){
+          formulario.reset();
+        })
+      })
+    </script>
+
+    <!--Iconos de Font Awesome-->
+    <script src="https://kit.fontawesome.com/7ebb796527.js" crossorigin="anonymous"></script>
+</body>
+</html>
